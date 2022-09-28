@@ -91,6 +91,7 @@ header .introduction span:last-child {
 	text-align: center;
 	width: 100%;
 	margin-bottom: 20px;
+	font-size: 120%;
 	font-weight: 500;
 }
 
@@ -103,4 +104,15 @@ header .introduction span:last-child {
 	content: "";
 	display: inline-block;
 	width: 30px;
+}
+
+.background {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+
+.background .title {
+	font-size: 150%;
+	font-weight: 500;
 }
