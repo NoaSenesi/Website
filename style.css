@@ -55,6 +55,10 @@ header .introduction span:last-child {
 	box-shadow: 0 0 5px black;
 }
 
+.about-me * {
+	float: left;
+}
+
 .about-me .image {
 	width: 300px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
@@ -64,11 +68,29 @@ header .introduction span:last-child {
 	width: 100%;
 }
 
-.about-me .content {
+.about-me .container {
 	padding: 20px;
 	box-sizing: border-box;
+	width: calc(100% - 300px);
 }
 
-.about-me * {
-	float: left;
+.about-me .container * {
+	float: inherit;
+}
+
+.about-me .container .title {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.about-me .container .content {
+	font-weight: lighter;
+	text-align: justify;
+}
+
+.about-me .container .content:before {
+	content: " ";
+	display: inline-block;
+	width: 30px;
 }
