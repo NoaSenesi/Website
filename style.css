@@ -91,6 +91,7 @@ header .introduction span:last-child {
 	text-align: center;
 	width: 100%;
 	margin-bottom: 20px;
+	font-weight: 500;
 }
 
 .about-me .container .content {
@@ -99,7 +100,7 @@ header .introduction span:last-child {
 }
 
 .about-me .container .content:before {
-	content: " ";
+	content: "";
 	display: inline-block;
 	width: 30px;
 }
