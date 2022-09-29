@@ -40,6 +40,35 @@ header .introduction {
 	transform: translate(-50%, -50%);
 }
 
+header .introduction .typing::after {
+	content: "";
+	outline: 2px solid white;
+	border-radius: 2px;
+	position: relative;
+	left: 5px;
+	animation-name: blink;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+
+	45% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	95% {
+		opacity: 0;
+	}
+}
+
 header .introduction span {
 	display: block;
 	text-align: center;
