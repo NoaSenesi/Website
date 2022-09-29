@@ -43,7 +43,6 @@ header .introduction {
 header .introduction .typing::after {
 	content: "";
 	outline: 2px solid white;
-	border-radius: 2px;
 	position: relative;
 	left: 5px;
 	animation-name: blink;
