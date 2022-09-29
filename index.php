@@ -1,3 +1,10 @@
+<?php
+include "lang.php";
+
+$d1 = new DateTime();
+$d2 = new DateTime("2002-06-27");
+$age = $d2->diff($d1)->y;
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,11 +15,8 @@
 	</head>
 	<body>
 		<header>
-			<!--<div class="background">
-				<img src="img/background.png">
-			</div>-->
 			<div class="introduction">
-				<span>Hello, I am</span>
+				<span><?= $_LANG["introduction"] ?></span>
 				<span class="typing">&nbsp;</span>
 			</div>
 		</header>
@@ -22,100 +26,57 @@
 				<img src="img/logo.png" draggable="false">
 			</div>
 			<div class="container">
-				<div class="title">About me</div>
-				<div class="content">I am a 20 year-old French student, currently studying in Télécom Nancy. Physics, computer science and languages are my main interests. I am nonetheless always open to learning more!</div>
+				<div class="title"><?= $_LANG["about_me"] ?></div>
+				<div class="content"><?= str_replace("{age}", $age, $_LANG["about_me_text"]) ?></div>
 			</div>
 		</article>
 		<div class="space"></div>
 		<article class="block background">
-			<div class="title">Background</div>
+			<div class="title"><?= $_LANG["background"] ?></div>
+			<?php
+			foreach ($_LANG["background_elements"] as $bg) {
+			?>
 			<div class="part">
-				<div>High-school Jean Perrin - Rezé, France</div>
-				<div>Baccalaureate STI2D SIN - Honours</div>
-				<div>September 2017 - June 2020</div>
+				<div><?= $bg["title"] ?></div>
+				<div><?= $bg["description"][0] ?></div>
+				<div><?= $bg["description"][1] ?? "&nbsp;" ?></div>
 			</div>
-			<div class="part">
-				<div>High-school Aristide Briand - Saint-Nazaire, France</div>
-				<div>Classe Préparatoire aux Grandes Écoles TSI</div>
-				<div>September 2020 - June 2022</div>
-			</div>
-			<div class="part">
-				<div>Télécom Nancy - Nancy, France</div>
-				<div>September 2022 - Today</div>
-				<div>&nbsp;</div>
-			</div>
+			<?php
+			}
+			?>
 		</article>
 		<hr>
 		<article class="block skills">
-			<div class="title">Skills</div>
+			<div class="title"><?= $_LANG["skills"] ?></div>
 			<div class="container">
-				<div class="subtitle">Languages</div>
+				<?php
+				foreach ($_LANG["skills_elements"] as $skill) {
+				?>
+				<div class="subtitle"><?= $skill["subtitle"] ?></div>
+				<?php
+				foreach ($skill["elements"] as $el) {
+				?>
 				<div class="part">
-					<div class="skill">French:</div>
-					<div class="bar" style="--width: 100%"></div>
+					<div class="skill"><?= $el["name"] ?>:</div>
+					<div class="bar" style="--width: <?= $el["value"] ?>%"></div>
 				</div>
-				<div class="part">
-					<div class="skill">English:</div>
-					<div class="bar" style="--width: 95%"></div>
-				</div>
-				<div class="part">
-					<div class="skill">German:</div>
-					<div class="bar" style="--width: 20%"></div>
-				</div>
-				<div class="subtitle">Programming</div>
-				<div class="part">
-					<div class="skill">HTML / CSS:</div>
-					<div class="bar" style="--width: 80%"></div>
-				</div>
-				<div class="part">
-					<div class="skill">JS:</div>
-					<div class="bar" style="--width: 75%"></div>
-				</div>
-				<div class="part">
-					<div class="skill">PHP / MySQL:</div>
-					<div class="bar" style="--width: 90%"></div>
-				</div>
-				<div class="part">
-					<div class="skill">Java:</div>
-					<div class="bar" style="--width: 60%"></div>
-				</div>
-				<div class="part">
-					<div class="skill">Python:</div>
-					<div class="bar" style="--width: 80%"></div>
-				</div>
-				<div class="part">
-					<div class="skill">MATLAB:</div>
-					<div class="bar" style="--width: 30%"></div>
-				</div>
-				<div class="part">
-					<div class="skill">Git:</div>
-					<div class="bar" style="--width: 60%"></div>
-				</div>
-				<div class="subtitle">Miscellanous</div>
-				<div class="part">
-					<div class="skill">Googling:</div>
-					<div class="bar" style="--width:90%"></div>
-				</div>
-				<div class="part">
-					<div class="skill">Learning:</div>
-					<div class="bar" style="--width:85%"></div>
-				</div>
-				<div class="part">
-					<div class="skill">Coffee making:</div>
-					<div class="bar" style="--width:80%"></div>
-				</div>
-				<div class="part">
-					<div class="skill">Rubik's Cube:</div>
-					<div class="bar" style="--width:95%"></div>
-				</div>
+				<?php
+				}}
+				?>
 			</div>
 		</article>
 		<hr>
 		<article class="block links">
-			<div class="title">Links</div>
+			<div class="title"><?= $_LANG["links"] ?></div>
 			<div class="container">
 				<div>
-					<a href="https://github.com/NoaSenesi" target="_blank">GitHub</a>
+					<?php
+					foreach ($_LANG["links_elements"] as $link) {
+					?>
+					<a href="<?= $link["value"] ?>" target="_blank"><?= $link["name"] ?></a>
+					<?php
+					}
+					?>
 				</div>
 			</div>
 		</article>
