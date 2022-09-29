@@ -1,3 +1,7 @@
+:root {
+	--bg: #020e21;
+}
+
 @font-face {
 	font-family: Quicksand;
 	src: url(fonts/Quicksand.ttf);
@@ -16,7 +20,7 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background: #020e21;
+	background: var(--bg);
 }
 
 header {
@@ -115,4 +119,54 @@ header .introduction span:last-child {
 .background .title {
 	font-size: 150%;
 	font-weight: 500;
+	margin-bottom: 30px;
+}
+
+.background .part {
+	padding: 15px 0;
+	position: relative;
+	text-align: left;
+	padding-left: 50px;
+}
+
+.background .part::before {
+	content: "";
+	width: 3px;
+	height: 100%;
+	background: white;
+	position: absolute;
+	top: -27px;
+	left: 0;
+	transform: translate(-50%, 0);
+}
+
+.background div:nth-child(2)::before {
+	height: 50%;
+	top: calc(50% - 27px);
+}
+
+.background div:last-child::before {
+	height: 50%;
+}
+
+.background .part::after {
+	content: "";
+	background: var(--bg);
+	width: 8px;
+	height: 8px;
+	border: 3px solid white;
+	border-radius: 100%;
+	position: absolute;
+	top: calc(50% - 27px);
+	left: 0;
+	transform: translate(-50%, -50%);
+	outline: 3px solid var(--bg);
+}
+
+.background .part div {
+	margin: -5px ;
+}
+
+.background .part div:not(:first-child) {
+	opacity: 30%;
 }
