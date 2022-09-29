@@ -250,3 +250,30 @@ hr {
 	height: 100%;
 	position: absolute;
 }
+
+.links .container div {
+	display: block;
+	margin: 10px 0;
+	font-size: 120%;
+	transition: 0.5s;
+}
+
+.links .container div a {
+	text-decoration: none;
+	position: relative;
+}
+
+.links .container div a::after {
+	content: "";
+	background: white;
+	width: 0%;
+	transition: 0.3s;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.links .container div a:hover::after {
+	width: 100%;
+}
