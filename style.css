@@ -1,5 +1,6 @@
 :root {
 	--bg: #020e21;
+	--bar: #248ca3;
 }
 
 @font-face {
@@ -110,13 +111,13 @@ header .introduction span:last-child {
 	width: 30px;
 }
 
-.background {
+.block {
 	margin: auto;
 	width: 650px;
 	text-align: center;
 }
 
-.background .title {
+.title {
 	font-size: 150%;
 	font-weight: 500;
 	margin-bottom: 30px;
@@ -127,6 +128,12 @@ header .introduction span:last-child {
 	position: relative;
 	text-align: left;
 	padding-left: 50px;
+	left: 0;
+	transition: 0.5s;
+}
+
+.background .part:hover {
+	left: 5px;
 }
 
 .background .part::before {
@@ -138,15 +145,20 @@ header .introduction span:last-child {
 	top: -26px;
 	left: 0;
 	transform: translate(-50%, 0);
+	transition: 0.5s;
+}
+
+.background .part:hover::before, .background .part:hover::after {
+	left: -5px;
 }
 
 .background div:nth-child(2)::before {
-	height: 50%;
+	height: 51%;
 	top: calc(50% - 26px);
 }
 
 .background div:last-child::before {
-	height: 50%;
+	height: 51%;
 }
 
 .background .part::after {
@@ -161,6 +173,7 @@ header .introduction span:last-child {
 	left: 0;
 	transform: translate(-50%, -50%);
 	outline: 3px solid var(--bg);
+	transition: 0.5s;
 }
 
 .background .part div {
@@ -169,4 +182,71 @@ header .introduction span:last-child {
 
 .background .part div:not(:first-child) {
 	opacity: 30%;
+}
+
+hr {
+	width: 50%;
+	opacity: 30%;
+	margin: 50px auto;
+}
+
+.skills .container {
+	position: relative;
+	text-align: left;
+}
+
+.skills .container .subtitle {
+	font-weight: 500;
+	font-size: 120%;
+	margin: 30px 0 10px 20px;
+}
+
+.skills .container .part {
+	padding: 15px 0;
+	padding-left: 40px;
+	position: relative;
+	left: 0;
+	transition: 0.5s;
+}
+
+.skills .container .part .skill {
+	position: relative;
+	left: 0;
+	transition: 0.5s;
+}
+
+.skills .container .part:hover .skill {
+	left: 5px;
+}
+
+.skills .container .part::before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border: 3px solid white;
+	border-radius: 100%;
+	position: absolute;
+	top: calc(50%);
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+
+.skills .container .part * {
+	display: inline-block;
+}
+
+.skills .container .part .bar {
+	position: absolute;
+	right: 0;
+	width: calc(100% - 250px);
+	height: 50%;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.skills .container .part .bar::after {
+	content: "";
+	background: var(--bar);
+	width: var(--width);
+	height: 100%;
+	position: absolute;
 }
