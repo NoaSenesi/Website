@@ -112,7 +112,7 @@ header .introduction span:last-child {
 
 .background {
 	margin: auto;
-	width: 60%;
+	width: 650px;
 	text-align: center;
 }
 
@@ -135,14 +135,14 @@ header .introduction span:last-child {
 	height: 100%;
 	background: white;
 	position: absolute;
-	top: -27px;
+	top: -26px;
 	left: 0;
 	transform: translate(-50%, 0);
 }
 
 .background div:nth-child(2)::before {
 	height: 50%;
-	top: calc(50% - 27px);
+	top: calc(50% - 26px);
 }
 
 .background div:last-child::before {
@@ -157,7 +157,7 @@ header .introduction span:last-child {
 	border: 3px solid white;
 	border-radius: 100%;
 	position: absolute;
-	top: calc(50% - 27px);
+	top: calc(50% - 26px);
 	left: 0;
 	transform: translate(-50%, -50%);
 	outline: 3px solid var(--bg);
