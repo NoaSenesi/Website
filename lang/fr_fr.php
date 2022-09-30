@@ -7,7 +7,7 @@ $_LANG = array(
 	"about_me" => "À propos de moi",
 	"about_me_text" => "Je suis un étudiant de {age} ans à l'école Télécom Nancy. Je suis passionné par la physique, l'informatique et les langues. Néanmoins, je suis toujours ouvert à de nouveau sujets!",
 	
-	"background" => "Formation",
+	"background" => "Parcours",
 	"background_elements" => array(
 		array(
 			"title" => "Lycée Jean Perrin - Rezé, France",
