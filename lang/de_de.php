@@ -1,4 +1,6 @@
 <?php
+$_FLAG = "de";
+
 $_LANG = array(
 	"introduction" => "Hallo, ich bin",
 	

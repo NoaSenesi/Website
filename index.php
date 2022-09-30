@@ -20,6 +20,26 @@ $age = $d2->diff($d1)->y;
 				<span class="typing">&nbsp;</span>
 			</div>
 		</header>
+		<div class="lang">
+			<img src="img/flags/<?= $_FLAG ?>.png">
+			<div class="other">
+				<form method="POST">
+					<?php if ($_FLAG != "fr") { ?>
+					<button name="fr">
+						<img src="img/flags/fr.png">
+					</button>
+					<?php } if ($_FLAG != "uk") { ?>
+					<button name="uk">
+						<img src="img/flags/uk.png">
+					</button>
+					<?php } if ($_FLAG != "de") { ?>
+					<button name="de">
+						<img src="img/flags/de.png">
+					</button>
+					<?php } ?>
+				</form>
+			</div>
+		</div>
 		<div class="space"></div>
 		<article class="about-me">
 			<div class="image">
