@@ -1,30 +1,30 @@
 <?php
 $_LANG = array(
-	"introduction" => "Hello, I am",
+	"introduction" => "Hallo, ich bin",
 	
-	"about_me" => "About me",
-	"about_me_text" => "I am a {age} year-old French student, currently studying in Télécom Nancy. Physics, computer science and languages are my main interests. I am nonetheless always open to learning more!",
+	"about_me" => "Über mich",
+	"about_me_text" => "Ich bin ein {age}-jähriher französischer Student, und studiere zurzeit in Télécom Nancy. Physik, Informatik und Sprachen sind meine Hauptinteressen. Dennoch, bin ich öffen für neue Themen!",
 	
-	"background" => "Background",
+	"background" => "Studien",
 	"background_elements" => array(
 		array(
-			"title" => "High-school Jean Perrin - Rezé, France",
+			"title" => "Jean-Perrin-Gymnasium - Rezé, France",
 			"description" => array(
-				"Baccalaureate STI2D SIN - Honours",
-				"September 2017 - June 2020"
+				"Baccalauréat STI2D SIN - Ehrungen",
+				"September 2017 - Juni 2020"
 			)
 		),
 		array(
-			"title" => "High-school Aristide Briand - Saint-Nazaire, France",
+			"title" => "Aristide-Briand-Gymnasium - Saint-Nazaire, France",
 			"description" => array(
 				"Classe Préparatoire aux Grandes Écoles TSI",
-				"September 2020 - June 2022"
+				"September 2020 - Juni 2022"
 			)
 		),
 		array(
 			"title" => "Télécom Nancy - Nancy, France",
 			"description" => array(
-				"September 2022 - Today"
+				"September 2022 - Heute"
 			)
 		)
 	),
@@ -32,15 +32,15 @@ $_LANG = array(
 	"skills" => "Skills",
 	"skills_elements" => array(
 		array(
-			"subtitle" => "Languages",
+			"subtitle" => "Sprachen",
 			"elements" => array(
-				array("name" => "French", "value" => "100"),
-				array("name" => "English", "value" => "95"),
-				array("name" => "German", "value" => "20")
+				array("name" => "Französisch", "value" => "100"),
+				array("name" => "Englisch", "value" => "95"),
+				array("name" => "Deutsch", "value" => "20")
 			)
 		),
 		array(
-			"subtitle" => "Programming",
+			"subtitle" => "Informatik",
 			"elements" => array(
 				array("name" => "HTML / CSS", "value" => "80"),
 				array("name" => "JS", "value" => "75"),
@@ -52,10 +52,10 @@ $_LANG = array(
 			)
 		),
 		array(
-			"subtitle" => "Sonstiges",
+			"subtitle" => "Miscellanous",
 			"elements" => array(
 				array("name" => "Googling", "value" => "90"),
-				array("name" => "Lernen", "value" => "85"),
+				array("name" => "Learning", "value" => "85"),
 				array("name" => "Rubik's Cube", "value" => "95")
 			)
 		)
