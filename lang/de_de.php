@@ -10,21 +10,21 @@ $_LANG = array(
 	"background" => "Hintergrund",
 	"background_elements" => array(
 		array(
-			"title" => "Jean-Perrin-Gymnasium - Rezé, France",
+			"title" => "Jean-Perrin-Gymnasium - Rezé, Frankreich",
 			"description" => array(
 				"Baccalauréat STI2D SIN - Ehrungen",
 				"September 2017 - Juni 2020"
 			)
 		),
 		array(
-			"title" => "Aristide-Briand-Gymnasium - Saint-Nazaire, France",
+			"title" => "Aristide-Briand-Gymnasium - Saint-Nazaire, Frankreich",
 			"description" => array(
 				"Classe Préparatoire aux Grandes Écoles TSI",
 				"September 2020 - Juni 2022"
 			)
 		),
 		array(
-			"title" => "Télécom Nancy - Nancy, France",
+			"title" => "Télécom Nancy - Nancy, Frankreich",
 			"description" => array(
 				"September 2022 - Heute"
 			)
