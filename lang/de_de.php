@@ -12,7 +12,7 @@ $_LANG = array(
 		array(
 			"title" => "Jean-Perrin-Gymnasium - Rezé, Frankreich",
 			"description" => array(
-				"Baccalauréat STI2D SIN - Ehrungen",
+				"Baccalauréat STI2D SIN - Summa cum laude",
 				"September 2017 - Juni 2020"
 			)
 		),
@@ -54,10 +54,10 @@ $_LANG = array(
 			)
 		),
 		array(
-			"subtitle" => "Miscellanous",
+			"subtitle" => "Divers",
 			"elements" => array(
 				array("name" => "Googling", "value" => "90"),
-				array("name" => "Learning", "value" => "85"),
+				array("name" => "Lernen", "value" => "85"),
 				array("name" => "Rubik's Cube", "value" => "95")
 			)
 		)

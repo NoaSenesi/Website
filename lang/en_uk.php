@@ -12,7 +12,7 @@ $_LANG = array(
 		array(
 			"title" => "High-school Jean Perrin - Rezé, France",
 			"description" => array(
-				"Baccalaureate STI2D SIN - Honours",
+				"Baccalauréat STI2D SIN - Highest honours",
 				"September 2017 - June 2020"
 			)
 		),
@@ -57,7 +57,7 @@ $_LANG = array(
 			"subtitle" => "Sonstiges",
 			"elements" => array(
 				array("name" => "Googling", "value" => "90"),
-				array("name" => "Lernen", "value" => "85"),
+				array("name" => "Learning", "value" => "85"),
 				array("name" => "Rubik's Cube", "value" => "95")
 			)
 		)
