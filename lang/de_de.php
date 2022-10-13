@@ -5,7 +5,7 @@ $_LANG = array(
 	"introduction" => "Hallo, ich bin",
 	
 	"about_me" => "Über mich",
-	"about_me_text" => "Ich bin ein {age}-jähriher französischer Student, und studiere zurzeit in Télécom Nancy. Physik, Informatik und Sprachen sind meine Hauptinteressen. Dennoch, bin ich öffen für neue Themen!",
+	"about_me_text" => "Ich bin ein {age}-jähriher französischer Student, und studiere zurzeit an der Télécom Nancy. Physik, Informatik und Sprachen sind meine Hauptinteressen. Dennoch bin ich öffen für neue Themen.",
 	
 	"background" => "Hintergrund",
 	"background_elements" => array(
@@ -19,7 +19,7 @@ $_LANG = array(
 		array(
 			"title" => "Aristide-Briand-Gymnasium - Saint-Nazaire, Frankreich",
 			"description" => array(
-				"Classe Préparatoire aux Grandes Écoles TSI",
+				"Grundstudium Ingenieurwissenschaften (CPGE TSI)",
 				"September 2020 - Juni 2022"
 			)
 		),
