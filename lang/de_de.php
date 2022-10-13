@@ -7,7 +7,13 @@ $_LANG = array(
 	"about_me" => "Über mich",
 	"about_me_text" => "Ich bin ein {age}-jähriher französischer Student, und studiere zurzeit an der Télécom Nancy. Physik, Informatik und Sprachen sind meine Hauptinteressen. Dennoch bin ich öffen für neue Themen.",
 	
-	"background" => "Hintergrund",
+	"information" => "Informationen",
+	"information_elements" => array(
+		array("name" => "Nationalität", "value" => "Französisch"),
+		array("name" => "Geburtstag", "value" => "27. Juni 2002")
+	),
+	
+	"background" => "Ausbildung",
 	"background_elements" => array(
 		array(
 			"title" => "Jean-Perrin-Gymnasium - Rezé, Frankreich",
@@ -56,7 +62,6 @@ $_LANG = array(
 		array(
 			"subtitle" => "Divers",
 			"elements" => array(
-				array("name" => "Googling", "value" => "90"),
 				array("name" => "Lernen", "value" => "85"),
 				array("name" => "Rubik's Cube", "value" => "95")
 			)

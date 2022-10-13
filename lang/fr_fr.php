@@ -5,8 +5,16 @@ $_LANG = array(
 	"introduction" => "Bonjour, je suis",
 	
 	"about_me" => "À propos de moi",
-	"about_me_text" => "Je suis un étudiant de {age} ans à l'école Télécom Nancy. Je suis passionné par la physique, l'informatique et les langues. Néanmoins, je suis toujours ouvert à de nouveau sujets!",
+	"about_me_text" => "Je suis un étudiant de {age} ans à l'école Télécom Nancy. Je suis passionné par la physique, l'informatique et les langues. Néanmoins, je suis toujours ouvert à de nouveau sujets.",
 	
+	"information" => "Informations",
+	"information_elements" => array(
+		array("name" => "Nationalité", "value" => "Française"),
+		array("name" => "Date de naissance", "value" => "27 juin 2002")
+	),
+
+	"nationality" => "Nationalité",
+
 	"background" => "Parcours",
 	"background_elements" => array(
 		array(
@@ -56,7 +64,6 @@ $_LANG = array(
 		array(
 			"subtitle" => "Divers",
 			"elements" => array(
-				array("name" => "Googling", "value" => "90"),
 				array("name" => "Apprentissage", "value" => "85"),
 				array("name" => "Rubik's Cube", "value" => "95")
 			)

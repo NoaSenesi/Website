@@ -63,6 +63,19 @@ if (isset($_POST)) {
 			</div>
 		</article>
 		<div class="space"></div>
+		<article class="block information">
+			<div class="title"><?= $_LANG["information"] ?></div>
+			<div class="container">
+				<?php
+				foreach ($_LANG["information_elements"] as $info) {
+				?>
+				<div><?= $info["name"] ?>: <?= $info["value"] ?></div>
+				<?php
+				}
+				?>
+			</div>
+		</article>
+		<hr>
 		<article class="block background">
 			<div class="title"><?= $_LANG["background"] ?></div>
 			<?php
