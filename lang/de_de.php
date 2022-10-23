@@ -66,7 +66,7 @@ $_LANG = array(
 			)
 		),
 		array(
-			"subtitle" => "Divers",
+			"subtitle" => "Sonstiges",
 			"elements" => array(
 				array("name" => "Lernen", "value" => "85"),
 				array("name" => "Rubik's Cube", "value" => "95")
