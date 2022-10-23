@@ -205,13 +205,13 @@ header .introduction span:last-child {
 	left: 5px;
 }
 
-.background .part::before {
+.background .part:not(:last-child)::before {
 	content: "";
 	width: 3px;
 	height: 100%;
 	background: white;
 	position: absolute;
-	top: -26px;
+	top: 25px;
 	left: 0;
 	transform: translate(-50%, 0);
 	transition: 0.5s;
@@ -221,16 +221,20 @@ header .introduction span:last-child {
 	left: -5px;
 }
 
-.background div:nth-child(2)::before {
+.background > div:nth-child(2)::before {
 	height: 51%;
 	top: calc(50% - 26px);
 }
 
-.background div:last-child::before {
+.background > div:last-child::before {
 	height: 51%;
 }
 
-.background .part::after {
+.background .part > div:first-child {
+	position: relative;
+}
+
+.background .part > div:first-child::after {
 	content: "";
 	background: var(--bg);
 	width: 8px;
@@ -238,19 +242,55 @@ header .introduction span:last-child {
 	border: 3px solid white;
 	border-radius: 100%;
 	position: absolute;
-	top: calc(50% - 26px);
-	left: 0;
+	top: 50%;
+	left: -45px;
 	transform: translate(-50%, -50%);
 	outline: 3px solid var(--bg);
 	transition: 0.5s;
 }
 
-.background .part div {
+.background .part:hover > div:first-child::after {
+	left: -50px;
+}
+
+.background .part.content {
+	cursor: pointer;
+}
+
+.background .part.content > div:first-child {
+	text-decoration: underline dashed;
+}
+
+.background .part > div {
 	margin: -5px ;
 }
 
-.background .part div:not(:first-child) {
+.background .part > div:not(:first-child) {
 	opacity: 30%;
+}
+
+.background .part .content {
+	opacity: 100% !important;
+	margin-top: 20px;
+	pointer-events: none;
+	max-height: 0;
+	transition: 1s;
+	overflow: hidden;
+}
+
+.background .part:hover .content {
+	pointer-events: initial;
+	max-height: 400px;
+}
+
+.background .part .content .badges {
+	width: 100%;
+	font-size: 0;
+}
+
+.background .part .content .badges img {
+	width: calc(25% - 20px);
+	margin: 10px;
 }
 
 hr {

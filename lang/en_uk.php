@@ -33,7 +33,13 @@ $_LANG = array(
 			"title" => "Télécom Nancy - Nancy, France",
 			"description" => array(
 				"September 2022 - Today"
-			)
+			),
+			"content" => "<div class=\"badges\">
+				<img src=\"img/badges/mcl/1.png\">
+				<img src=\"img/badges/mcl/2.png\">
+				<img src=\"img/badges/mcl/3.png\">
+				<img src=\"img/badges/mcl/4.png\">
+			</div>"
 		)
 	),
 

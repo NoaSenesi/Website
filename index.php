@@ -81,10 +81,23 @@ if (isset($_POST)) {
 			<?php
 			foreach ($_LANG["background_elements"] as $bg) {
 			?>
-			<div class="part">
+			<div class="part<?= isset($bg["content"]) ? " content" : "" ?>">
 				<div><?= $bg["title"] ?></div>
-				<div><?= $bg["description"][0] ?></div>
-				<div><?= $bg["description"][1] ?? "&nbsp;" ?></div>
+				<?php
+				foreach ($bg["description"] as $d) {
+				?>
+				<div><?= $d ?></div>
+				<?php
+				}
+
+				if (isset($bg["content"])) {
+				?>
+				<div class="content">
+					<?= $bg["content"] ?>
+				</div>
+				<?php
+				}
+				?>
 			</div>
 			<?php
 			}
