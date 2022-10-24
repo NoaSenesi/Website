@@ -37,10 +37,10 @@ $_LANG = array(
 				"Septembre 2022 - Aujourd'hui"
 			),
 			"content" => "<div class=\"badges\">
-				<img src=\"img/badges/mcl/1.png\">
-				<img src=\"img/badges/mcl/2.png\">
-				<img src=\"img/badges/mcl/3.png\">
-				<img src=\"img/badges/mcl/4.png\">
+				<img src=\"img/badges/mcl/1.png\" draggable=\"false\">
+				<img src=\"img/badges/mcl/2.png\" draggable=\"false\">
+				<img src=\"img/badges/mcl/3.png\" draggable=\"false\">
+				<img src=\"img/badges/mcl/4.png\" draggable=\"false\">
 			</div>"
 		)
 	),

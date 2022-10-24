@@ -21,7 +21,9 @@ if (isset($_POST)) {
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="responsive.css">
 		<link rel="icon" href="img/logo.png">
 		<title>Noa Senesi</title>
 	</head>
@@ -52,7 +54,7 @@ if (isset($_POST)) {
 				</form>
 			</div>
 		</div>
-		<div class="space"></div>
+		<div class="space space-header"></div>
 		<article class="about-me">
 			<div class="image">
 				<img src="img/logo.png" draggable="false">
@@ -62,7 +64,7 @@ if (isset($_POST)) {
 				<div class="content"><?= str_replace("{age}", $age, $_LANG["about_me_text"]) ?></div>
 			</div>
 		</article>
-		<div class="space"></div>
+		<div class="space space-about-me"></div>
 		<article class="block information">
 			<div class="title"><?= $_LANG["information"] ?></div>
 			<div class="container">
@@ -78,30 +80,32 @@ if (isset($_POST)) {
 		<hr>
 		<article class="block background">
 			<div class="title"><?= $_LANG["background"] ?></div>
-			<?php
-			foreach ($_LANG["background_elements"] as $bg) {
-			?>
-			<div class="part<?= isset($bg["content"]) ? " content" : "" ?>">
-				<div><?= $bg["title"] ?></div>
+			<div class="container">
 				<?php
-				foreach ($bg["description"] as $d) {
+				foreach ($_LANG["background_elements"] as $bg) {
 				?>
-				<div><?= $d ?></div>
-				<?php
-				}
+				<div class="part<?= isset($bg["content"]) ? " content" : "" ?>">
+					<div><?= $bg["title"] ?></div>
+					<?php
+					foreach ($bg["description"] as $d) {
+					?>
+					<div><?= $d ?></div>
+					<?php
+					}
 
-				if (isset($bg["content"])) {
-				?>
-				<div class="content">
-					<?= $bg["content"] ?>
+					if (isset($bg["content"])) {
+					?>
+					<div class="content">
+						<?= $bg["content"] ?>
+					</div>
+					<?php
+					}
+					?>
 				</div>
 				<?php
 				}
 				?>
 			</div>
-			<?php
-			}
-			?>
 		</article>
 		<hr>
 		<article class="block skills">
