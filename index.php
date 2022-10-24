@@ -35,20 +35,20 @@ if (isset($_POST)) {
 			</div>
 		</header>
 		<div class="lang">
-			<img src="img/flags/<?= $_FLAG ?>.png">
+			<img src="img/flags/<?= $_FLAG ?>.png" draggable="false">
 			<div class="other">
 				<form method="POST">
 					<?php if ($_FLAG != "fr") { ?>
 					<button name="fr">
-						<img src="img/flags/fr.png">
+						<img src="img/flags/fr.png" draggable="false">
 					</button>
 					<?php } if ($_FLAG != "uk") { ?>
 					<button name="uk">
-						<img src="img/flags/uk.png">
+						<img src="img/flags/uk.png" draggable="false">
 					</button>
 					<?php } if ($_FLAG != "de") { ?>
 					<button name="de">
-						<img src="img/flags/de.png">
+						<img src="img/flags/de.png" draggable="false">
 					</button>
 					<?php } ?>
 				</form>
