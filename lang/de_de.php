@@ -5,7 +5,7 @@ $_LANG = array(
 	"introduction" => "Hallo, ich bin",
 	
 	"about_me" => "Über mich",
-	"about_me_text" => "Ich bin ein {age}-jähriher französischer Student, und studiere zurzeit an der Télécom Nancy. Physik, Informatik und Sprachen sind meine Hauptinteressen. Dennoch bin ich öffen für neue Themen.",
+	"about_me_text" => "Ich bin ein {age}-jähriher französischer Student, und studiere zurzeit an der Télécom Nancy. Physik, Informatik und Sprachen sind meine Hauptinteressen. Dennoch bin ich offen für neue Themen.",
 	
 	"information" => "Informationen",
 	"information_elements" => array(
