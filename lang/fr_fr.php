@@ -77,6 +77,7 @@ $_LANG = array(
 
 	"links" => "Liens",
 	"links_elements" => array(
+		array("name" => "LinkedIn", "value" => "https://www.linkedin.com/in/noa-senesi/"),
 		array("name" => "GitHub", "value" => "https://github.com/NoaSenesi")
 	)
 );

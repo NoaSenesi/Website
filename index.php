@@ -133,10 +133,17 @@ if (isset($_POST)) {
 			<div class="container">
 				<div>
 					<?php
+					$br = false;
 					foreach ($_LANG["links_elements"] as $link) {
+						if ($br) {
+					?>
+					<br>
+					<?php
+						}
 					?>
 					<a href="<?= $link["value"] ?>" target="_blank"><?= $link["name"] ?></a>
 					<?php
+					$br = true;
 					}
 					?>
 				</div>
