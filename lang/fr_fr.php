@@ -10,7 +10,8 @@ $_LANG = array(
 	"information" => "Informations",
 	"information_elements" => array(
 		array("name" => "Nationalité", "value" => "Française"),
-		array("name" => "Date de naissance", "value" => "27 juin 2002")
+		array("name" => "Date de naissance", "value" => "27 juin 2002"),
+		array("name" => "Adresse e-mail", "value" => "noa.senesi@gmail.com")
 	),
 
 	"nationality" => "Nationalité",
