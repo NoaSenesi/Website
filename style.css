@@ -1,6 +1,5 @@
 :root {
 	--bg: #020e21;
-	--bar: #248ca3;
 }
 
 @font-face {
@@ -33,363 +32,52 @@ img {
 }
 
 header {
-	display: block;
 	width: 100%;
 	height: 500px;
-	position: relative;
 	background: url(img/background.png);
-	background-size: cover;
-	box-shadow: 0 0 5px black;
-	z-index: 1;
+	position: relative;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 header .introduction {
+	font-size: 70px;
+	text-align: right;
 	position: absolute;
 	top: 50%;
+	right: 10%;
 	transform: translate(0, -50%);
-	width: 100%;
-}
-
-header .introduction .typing::after {
-	content: "";
-	outline: 2px solid white;
-	position: relative;
-	left: 5px;
-	animation-name: blink;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-}
-
-@keyframes blink {
-	0% {
-		opacity: 1;
-	}
-
-	45% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0;
-	}
-
-	95% {
-		opacity: 0;
-	}
+	text-transform: uppercase;
 }
 
 header .introduction span {
 	display: block;
-	text-align: center;
-	font-size: 60px;
-	font-weight: lighter;
-	text-transform: uppercase;
-}
-
-header .introduction span:last-child {
-	font-weight: bold;
-}
-
-.lang {
-	background: red;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	width: 50px;
-	height: 30px;
-	cursor: pointer;
-	z-index: 2;
-}
-
-.lang img {
-	width: 100%;
-	cursor: pointer;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-.lang .other {
-	position: absolute;
-	bottom: 30px;
-	width: 100%;
-	padding-bottom: 3px;
-	pointer-events: none;
-	opacity: 0;
-	transition: 0.3s;
-}
-
-.lang:hover .other {
-	pointer-events: all;
-	opacity: 1;
-}
-
-.lang .other button {
-	padding: 0;
-	margin: 0;
-	background: none;
-	border: none;
-	outline: none;
-	box-shadow: none;
-	width: 100%;
-}
-
-.space {
-	height: 100px;
-}
-
-.about-me {
-	margin: auto;
-	width: 60%;
-	height: 300px;
-	background: rgba(255, 255, 255, 0.1);
-	box-shadow: 0 0 5px black;
-}
-
-.about-me * {
-	float: left;
-}
-
-.about-me .image {
-	width: 300px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-}
-
-.about-me .image img {
-	width: 100%;
-}
-
-.about-me .container {
-	padding: 20px;
-	box-sizing: border-box;
-	width: calc(100% - 300px);
-}
-
-.about-me .container * {
-	float: inherit;
-}
-
-.about-me .container .title {
-	text-align: center;
-	width: 100%;
-	margin-bottom: 20px;
-	font-size: 120%;
-	font-weight: 500;
-}
-
-.about-me .container .content {
-	font-weight: lighter;
-	text-align: justify;
-}
-
-.about-me .container .content:before {
-	content: "";
-	display: inline-block;
-	width: 30px;
-}
-
-.block {
-	margin: auto;
-	max-width: 650px;
-	width: 80%;
-	text-align: center;
-}
-
-.title {
-	font-size: 150%;
-	font-weight: 500;
-	margin-bottom: 30px;
-}
-
-.background .part {
-	padding: 15px 0;
-	position: relative;
-	text-align: left;
-	padding-left: 50px;
-	left: 0;
-	transition: 0.5s;
-}
-
-.background .part:hover {
-	left: 5px;
-}
-
-.background .part:not(:last-child)::before {
-	content: "";
-	width: 3px;
-	height: 100%;
-	background: white;
-	position: absolute;
-	top: 25px;
-	left: 0;
-	transform: translate(-50%, 0);
-	transition: 0.5s;
-}
-
-.background .part:hover::before, .background .part:hover::after {
-	left: -5px;
-}
-
-.background > div:nth-child(2)::before {
-	height: 51%;
-	top: calc(50% - 26px);
-}
-
-.background > div:last-child::before {
-	height: 51%;
-}
-
-.background .part > div:first-child {
-	position: relative;
-}
-
-.background .part > div:first-child::after {
-	content: "";
-	background: var(--bg);
-	width: 8px;
-	height: 8px;
-	border: 3px solid white;
-	border-radius: 100%;
-	position: absolute;
-	top: 15px;
-	left: -45px;
-	transform: translate(-50%, -50%);
-	outline: 3px solid var(--bg);
-	transition: 0.5s;
-}
-
-.background .part:hover > div:first-child::after {
-	left: -50px;
-}
-
-.background .part.content {
-	cursor: pointer;
-}
-
-.background .part.content > div:first-child {
-	text-decoration: underline dashed;
-}
-
-.background .part > div {
-	margin: -5px ;
-}
-
-.background .part > div:not(:first-child) {
-	opacity: 30%;
-}
-
-.background .part .content {
-	opacity: 100% !important;
-	margin-top: 20px;
-	pointer-events: none;
-	max-height: 0;
+	color: transparent;
+	background: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 50%, white 55%);
+	background-size: 250% auto;
+	background-position: 100% center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-ms-background-clip: text;
+	-o-background-clip: text;
 	transition: 1s;
-	overflow: hidden;
+	animation-name: swipe;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
 }
 
-.background .part:hover .content {
-	pointer-events: initial;
-	max-height: 400px;
+header .introduction .name {
+	font-weight: bold;
+	animation-delay: 0.6s;
 }
 
-.background .part .content .badges {
-	width: 100%;
-	font-size: 0;
-}
+@keyframes swipe {
+	from {
+		background-position: 100% center;
+	}
 
-.background .part .content .badges img {
-	width: calc(25% - 20px);
-	margin: 10px;
-}
-
-hr {
-	width: 50%;
-	opacity: 30%;
-	margin: 50px auto;
-}
-
-.skills .container {
-	position: relative;
-	text-align: left;
-}
-
-.skills .container .subtitle {
-	font-weight: 500;
-	font-size: 120%;
-	margin: 30px 0 10px 20px;
-}
-
-.skills .container .part {
-	padding: 15px 0;
-	padding-left: 40px;
-	position: relative;
-	left: 0;
-	transition: 0.5s;
-}
-
-.skills .container .part .skill {
-	position: relative;
-	left: 0;
-	transition: 0.5s;
-}
-
-.skills .container .part:hover .skill {
-	left: 5px;
-}
-
-.skills .container .part::before {
-	content: "";
-	width: 8px;
-	height: 8px;
-	border: 3px solid white;
-	border-radius: 100%;
-	position: absolute;
-	top: calc(50%);
-	left: 0;
-	transform: translate(-50%, -50%);
-}
-
-.skills .container .part * {
-	display: inline-block;
-}
-
-.skills .container .part .bar {
-	position: absolute;
-	right: 0;
-	width: calc(100% - 270px);
-	height: 50%;
-	background: rgba(255, 255, 255, 0.2);
-}
-
-.skills .container .part .bar::after {
-	content: "";
-	background: var(--bar);
-	width: var(--width);
-	height: 100%;
-	position: absolute;
-}
-
-.links .container div {
-	display: block;
-	margin: 10px 0;
-	font-size: 120%;
-	transition: 0.5s;
-}
-
-.links .container div a {
-	text-decoration: none;
-	position: relative;
-}
-
-.links .container div a::after {
-	content: "";
-	background: white;
-	width: 0%;
-	transition: 0.3s;
-	height: 2px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-
-.links .container div a:hover::after {
-	width: 100%;
+	to {
+		background-position: 0% center;
+	}
 }
