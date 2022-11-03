@@ -25,6 +25,7 @@ if (isset($_POST)) {
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="responsive.css">
 		<link rel="icon" href="img/logo.png">
+		<script src="script.js" defer></script>
 		<title>Noa Senesi</title>
 	</head>
 	<body>
@@ -150,6 +151,5 @@ if (isset($_POST)) {
 			</div>
 		</article>
 		<div class="space"></div>
-		<script src="script.js"></script>
 	</body>
 </html>
