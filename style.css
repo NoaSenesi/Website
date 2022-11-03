@@ -33,13 +33,21 @@ img {
 
 header {
 	width: 100%;
-	height: 500px;
-	background: url(img/background.png);
+	height: 700px;
 	position: relative;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-header .introduction {
+header .content {
+	width: 100%;
+	height: 500px;
+	background: url(img/background.png);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+header .content .introduction {
 	font-size: 70px;
 	text-align: right;
 	position: absolute;

@@ -30,7 +30,12 @@ if (isset($_POST)) {
 	</head>
 	<body>
 		<header>
-			<div class="introduction"><span>Hello, I am</span><span class="name">Noa Senesi</span></div>
+			<div class="content">
+				<div class="introduction">
+					<span>Hello, I am</span>
+					<span class="name">Noa Senesi</span>
+				</div>
+			</div>
 		</header>
 		<?php for ($i = 0; $i < 100; $i++) { ?>
 		<h1>Test</h1>
