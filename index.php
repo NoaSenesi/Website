@@ -36,6 +36,9 @@ if (isset($_POST)) {
 					<span class="name">Noa Senesi</span>
 				</div>
 			</div>
+			<div class="subheader">
+				<img src="img/subheader.svg">
+			</div>
 		</header>
 		<?php for ($i = 0; $i < 100; $i++) { ?>
 		<h1>Test</h1>

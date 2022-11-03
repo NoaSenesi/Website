@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="400">
+	<path d="M0 40 L1920 0 L1920 100 L0 100" fill="rgba(56, 70, 92, 0.5)"></path>
+	<path d="M0 140 L1920 260 L1920 280 L0 320" fill="#081933"></path>
+	<path d="M0 160 L1920 120 L1920 300 L0 180" fill="#172945"></path>
+	<path d="M0 20 L1920 100 L1920 140 L0 200" fill="#28374f"></path>
+</svg>
