@@ -58,12 +58,12 @@ $_LANG = array(
 			"subtitle" => "Informatique",
 			"elements" => array(
 				array("name" => "HTML / CSS", "value" => "80"),
-				array("name" => "JS", "value" => "75"),
+				array("name" => "JS", "value" => "80"),
 				array("name" => "PHP / MySQL", "value" => "80"),
 				array("name" => "Java", "value" => "50"),
-				array("name" => "Python", "value" => "70"),
-				array("name" => "MATLAB", "value" => "20"),
-				array("name" => "Git", "value" => "60")
+				array("name" => "Python", "value" => "75"),
+				array("name" => "MATLAB", "value" => "30"),
+				array("name" => "Git", "value" => "70")
 			)
 		),
 		array(
