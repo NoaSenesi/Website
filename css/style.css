@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand.ttf);
+}
+
+* {
+    font-family: Quicksand;
+    color: white;
+}
+
+:root {
+    --bg: rgb(43, 55, 82);
+}
+
+body {
+    background: var(--bg);
+    margin: 0;
+}
+
+header {
+    background: url(../img/header.png) right;
+    background-size: cover;
+    width: 100%;
+    height: 100vb;
+    position: relative;
+}
+
+header .introduction {
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    width: 80%;
+}
+
+header .introduction span {
+    display: block;
+    width: 100%;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+header .introduction span:last-child {
+    font-weight: bold;
+}
+
+header .brand {
+    background: url(../img/brand.png);
+    background-size: cover;
+    width: 200px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    translate: 0 -50%;
+}
