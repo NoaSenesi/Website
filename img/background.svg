@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+    <rect x="0" y="0" width="120" height="120"/>
+
+    <path d="M 60,0 96,12 84,48 120,60 108,96 72,84 60,120 24,108 36,72 0,60 12,24 48,36 z"/>
+    <path d="M 60,0 96,12 84,48 120,60 108,96 72,84 60,120 24,108 36,72 0,60 12,24 48,36 z"/>
+    <path d="M 60,0 96,12 84,48 120,60 108,96 72,84 60,120 24,108 36,72 0,60 12,24 48,36 z"/>
+    <path d="M 60,0 96,12 84,48 120,60 108,96 72,84 60,120 24,108 36,72 0,60 12,24 48,36 z"/>
+    <style>
+        svg {
+            --bg1: #081933;
+            --bg2: #071730;
+        }
+
+        rect {
+            animation: bg 8s linear infinite;
+        }
+
+        @keyframes bg {
+            0% {
+                fill: var(--bg1);
+            }
+            
+            50% {
+                fill: var(--bg1);
+            }
+
+            50.001% {
+                fill: var(--bg2);
+            }
+
+            100% {
+                fill: var(--bg2);
+            }
+        }
+
+        path:nth-child(2) {
+            transform-origin: center;
+            animation: bg1 4s linear infinite, fg 8s linear infinite;
+        }
+
+        @keyframes bg1 {
+            0% {
+                translate: -100% 0;
+            }
+
+            75% {
+                transform: rotate(0deg);
+            }
+            
+            100% {
+                transform: rotate(90deg);
+                translate: -50% 50%;
+            }
+        }
+
+        path:nth-child(3) {
+            transform-origin: center;
+            animation: bg2 4s linear infinite, fg 8s linear infinite;
+        }
+
+        @keyframes bg2 {
+            0% {
+                translate: -100% -100%;
+            }
+            
+            75% {
+                transform: rotate(0deg);
+            }
+            
+            100% {
+                transform: rotate(90deg);
+                translate: -50% -50%;
+            }
+        }
+
+        path:nth-child(4) {
+            transform-origin: center;
+            animation: bg3 4s linear infinite, fg 8s linear infinite;
+        }
+
+        @keyframes bg3 {
+            0% {
+                translate: 0 -100%;
+            }
+            
+            75% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(90deg);
+                translate: 50% -50%;
+            }
+        }
+
+        path:nth-child(5) {
+            transform-origin: center;
+            animation: bg4 4s linear infinite, fg 8s linear infinite;
+        }
+
+        @keyframes bg4 {
+            0% {
+                translate: 0 0;
+            }
+            
+            75% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(90deg);
+                translate: 50% 50%;
+            }
+        }
+
+        @keyframes fg {
+            0% {
+                fill: var(--bg2);
+            }
+
+            50% {
+                fill: var(--bg2);
+            }
+
+            50.001% {
+                fill: var(--bg1);
+            }
+
+            100% {
+                fill: var(--bg1);
+            }
+        }
+    </style>
+</svg>
