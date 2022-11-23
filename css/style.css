@@ -41,7 +41,7 @@ article::before {
 	left: -3px;
 	width: calc(100% + 6px);
 	height: calc(100% + 6px);
-	background: linear-gradient(45deg, #0062ff, #00ccff, #0062ff, #00ccff);
+	background: linear-gradient(to right, #0062ff, #00ccff, #0062ff, #00ccff);
 	background-size: 300%;
 	z-index: -1;
 	border-radius: 22px;
@@ -87,7 +87,7 @@ article .content .more {
 
 article .content .birthday {
 	color: transparent;
-	background: linear-gradient(-45deg, #ffae00, #ffe600, #ffae00, #ffe600);
+	background: linear-gradient(to right, #ffae00, #ffe600, #ffae00, #ffe600);
 	background-size: 300%;
 	background-clip: text;
 	-webkit-background-clip: text;
