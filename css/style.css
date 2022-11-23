@@ -12,87 +12,70 @@
     color: white;
 }
 
+*::selection {
+	background: rgba(255, 255, 255, 0.2);
+}
+
 body {
     background: var(--bg);
     margin: 0;
 }
 
-header {
-    background: url(../img/header.png) right, url(../img/header-load.svg) right;
-    background-size: cover;
-    width: 100%;
-    height: 100vb;
+.spacing {
+    height: 100px;
+}
+
+article {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
     position: relative;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background: var(--bg);
 }
 
-header .introduction {
-    font-size: 100px;
+article::before {
+    content: "";
     position: absolute;
-    top: 50%;
-    translate: 0 -50%;
-    width: 80%;
+    top: -3px;
+    left: -3px;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    background: linear-gradient(45deg, #0062ff, #00ccff, #0062ff, #00ccff);
+    background-size: 300%;
+    z-index: -1;
+    border-radius: 22px;
+    animation: article-before 5s linear infinite;
 }
 
-header .introduction span {
-    display: block;
-    width: 100%;
-    text-align: right;
-    text-transform: uppercase;
-}
-
-header .introduction span:last-child {
-    font-weight: bold;
-}
-
-header .introduction span {
-	display: block;
-	color: transparent;
-	background: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 50%, white 55%);
-	background-size: 250% auto;
-	background-position: 100% center;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-ms-background-clip: text;
-	-o-background-clip: text;
-	animation: swipe 1s forwards 1s;
-}
-
-header .introduction span:last-child {
-	font-weight: bold;
-	animation-delay: 1.1s;
-}
-
-@keyframes swipe {
-	from {
-		background-position: 100% center;
-	}
-
-	to {
-		background-position: 0% center;
-	}
-}
-
-header .brand {
-    background: url(../img/brand.png);
-    background-size: cover;
-    width: 200px;
-    aspect-ratio: 1;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    translate: 0 -50%;
-    opacity: 0.2;
-    animation: brand 0.5s forwards 1.3s;
-}
-
-@keyframes brand {
-    to {
-        opacity: 1;
+@keyframes article-before {
+    0% {
+        background-position: 0 0;
+    }
+    
+    100% {
+        background-position: 100% 0;
     }
 }
 
-.spacing {
-    height: 100px;
+article .title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 30px 0;
+}
+
+article .content {
+    position: relative;
+    left: 50px;
+    width: calc(100% - 100px);
+    padding-bottom: 40px;
+    font-size: 22px;
+    text-align: justify;
+}
+
+article .content.paragraph::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
 }
