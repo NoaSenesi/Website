@@ -1,15 +1,15 @@
 :root {
-    --bg: #020e21;
+	--bg: #020e21;
 }
 
 @font-face {
-    font-family: Quicksand;
-    src: url(../fonts/Quicksand.ttf);
+	font-family: Quicksand;
+	src: url(../fonts/Quicksand.ttf);
 }
 
 * {
-    font-family: Quicksand, sans-serif;
-    color: white;
+	font-family: Quicksand, sans-serif;
+	color: white;
 }
 
 *::selection {
@@ -17,65 +17,82 @@
 }
 
 body {
-    background: var(--bg);
-    margin: 0;
+	background: var(--bg);
+	margin: 0;
 }
 
 .spacing {
-    height: 100px;
+	height: 100px;
 }
 
 article {
-    width: 70%;
-    max-width: 1000px;
-    margin: 0 auto;
-    border-radius: 20px;
-    position: relative;
-    background: var(--bg);
+	width: 70%;
+	max-width: 1000px;
+	margin: 0 auto;
+	border-radius: 20px;
+	position: relative;
+	background: var(--bg);
 }
 
 article::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    width: calc(100% + 6px);
-    height: calc(100% + 6px);
-    background: linear-gradient(45deg, #0062ff, #00ccff, #0062ff, #00ccff);
-    background-size: 300%;
-    z-index: -1;
-    border-radius: 22px;
-    animation: article-before 5s linear infinite;
+	content: "";
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	width: calc(100% + 6px);
+	height: calc(100% + 6px);
+	background: linear-gradient(45deg, #0062ff, #00ccff, #0062ff, #00ccff);
+	background-size: 300%;
+	z-index: -1;
+	border-radius: 22px;
+	animation: glow 5s linear infinite;
 }
 
-@keyframes article-before {
-    0% {
-        background-position: 0 0;
-    }
-    
-    100% {
-        background-position: 100% 0;
-    }
+@keyframes glow {
+	0% {
+		background-position: 0 0;
+	}
+	
+	100% {
+		background-position: 100% 0;
+	}
 }
 
 article .title {
-    text-align: center;
-    font-weight: 400;
-    font-size: 35px;
-    padding: 30px 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: 35px;
+	padding: 30px 0;
 }
 
 article .content {
-    position: relative;
-    left: 50px;
-    width: calc(100% - 100px);
-    padding-bottom: 40px;
-    font-size: 22px;
-    text-align: justify;
+	position: relative;
+	left: 50px;
+	width: calc(100% - 100px);
+	padding-bottom: 40px;
+	font-size: 22px;
+	text-align: justify;
 }
 
 article .content.paragraph::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
+	content: "";
+	display: inline-block;
+	width: 20px;
+}
+
+article .content .more {
+	padding-top: 20px;
+	text-align: center;
+}
+
+article .content .birthday {
+	color: transparent;
+	background: linear-gradient(-45deg, #ffae00, #ffe600, #ffae00, #ffe600);
+	background-size: 300%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-ms-background-clip: text;
+	-o-background-clip: text;
+	animation: glow 2s linear infinite;
 }

@@ -1,29 +1,29 @@
 header {
-    background: url(../img/header.png) right, url(../img/header-load.svg) right;
-    background-size: cover;
-    width: 100%;
-    height: 100vb;
-    position: relative;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+	background: url(../img/header.png) right, url(../img/header-load.svg) right;
+	background-size: cover;
+	width: 100%;
+	height: 100vb;
+	position: relative;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
 header .introduction {
-    font-size: 100px;
-    position: absolute;
-    top: 50%;
-    translate: 0 -50%;
-    width: 80%;
+	font-size: 100px;
+	position: absolute;
+	top: 50%;
+	translate: 0 -50%;
+	width: 80%;
 }
 
 header .introduction span {
-    display: block;
-    width: 100%;
-    text-align: right;
-    text-transform: uppercase;
+	display: block;
+	width: 100%;
+	text-align: right;
+	text-transform: uppercase;
 }
 
 header .introduction span:last-child {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 header .introduction span {
@@ -56,20 +56,20 @@ header .introduction span:last-child {
 }
 
 header .brand {
-    background: url(../img/brand.png);
-    background-size: cover;
-    width: 200px;
-    aspect-ratio: 1;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    translate: 0 -50%;
-    opacity: 0.2;
-    animation: brand 0.5s forwards 1.3s;
+	background: url(../img/brand.png);
+	background-size: cover;
+	width: 200px;
+	aspect-ratio: 1;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	translate: 0 -50%;
+	opacity: 0.2;
+	animation: brand 0.5s forwards 1.3s;
 }
 
 @keyframes brand {
-    to {
-        opacity: 1;
-    }
+	to {
+		opacity: 1;
+	}
 }
