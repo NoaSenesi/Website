@@ -95,4 +95,33 @@ article .content .birthday {
 	-ms-background-clip: text;
 	-o-background-clip: text;
 	animation: glow 2s linear infinite;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+}
+
+.balloon {
+	--color: red;
+	position: fixed;
+	width: 100px;
+	height: 300px;
+	pointer-events: none;
+	animation: fly 5s linear forwards;
+}
+
+.balloon svg .colored {
+	fill: var(--color);
+}
+
+@keyframes fly {
+	0% {
+		top: 100%;
+	}
+	
+	100% {
+		top: -300px;
+	}
 }
