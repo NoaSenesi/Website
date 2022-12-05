@@ -6,6 +6,14 @@
     header .brand {
         left: 10%;
     }
+    
+    .full-block {
+        padding: 50px 15%;
+    }
+
+    .full-block .bio-rea {
+        right: 15%;
+    }
 }
 
 @media (max-width: 1020px) {
@@ -15,6 +23,14 @@
 
     header .brand {
         width: 160px;
+    }
+    
+    .full-block {
+        padding: 50px 10%;
+    }
+
+    .full-block .bio-rea {
+        right: 10%;
     }
 }
 
@@ -29,5 +45,13 @@
 
     header .brand {
         display: none;
+    }
+    
+    .full-block {
+        padding: 50px 50px;
+    }
+
+    .full-block .bio-rea {
+        right: 50px;
     }
 }

@@ -25,17 +25,17 @@ $bd = $d2->format("d/m") == $d1->format("d/m");
 			</div>
 			<div class="brand"></div>
 		</header>
-		<div class="spacing"></div>
-		<article class="about-me">
+		<div class="about-me full-block">
 			<div class="title">About me</div>
+			<div class="bio-rea"><b>Bio</b>nic <b>Rea</b>ding</div>
 			<div class="content">
-				<div class="paragraph">I am a <?= $age ?> year-old French student, currently studying in Télécom Nancy. Physics, computer science and languages are my main interests. I am nonetheless always open to learning more.</div>
+				<?php include "about-me.php"; ?>
 				<div class="more">
 					<div<?= $bd ? " class=\"birthday\"" : "" ?>>Birthdate: 27 June 2002</div>
 					<div>Nationality: French</div>
 				</div>
 			</div>
-		</article>
+		</div>
 		<div class="spacing"></div>
 		<footer>
 			<div class="container">

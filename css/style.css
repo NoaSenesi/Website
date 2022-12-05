@@ -1,5 +1,6 @@
 :root {
 	--bg: #020e21;
+	--cyan: #00ccff;
 }
 
 @font-face {
@@ -25,6 +26,81 @@ body {
 	height: 100px;
 }
 
+.full-block {
+	width: 100%;
+	padding: 50px 20%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.full-block .title {
+	text-align: center;
+	font-weight: 400;
+	font-size: 35px;
+	padding: 30px 0;
+}
+
+.full-block .content {
+	padding-bottom: 40px;
+	font-size: 22px;
+	text-align: justify;
+}
+
+.full-block .content .paragraph {
+	margin-bottom: 20px;
+}
+
+.full-block .content .paragraph::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+}
+
+.full-block .content .paragraph .b {
+	font-weight: 400;
+}
+
+
+.full-block .content .more {
+	text-align: center;
+}
+
+.full-block .bio-rea {
+	color: var(--cyan);
+	position: absolute;
+	top: 85px;
+	right: 20%;
+	font-size: 20px;
+	padding: 5px 10px;
+	border: 2px solid var(--cyan);
+	border-radius: 10px;
+	cursor: pointer;
+	opacity: 0.2;
+	transition: 0.2s opacity;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	display: none;
+}
+.full-block .bio-rea:hover {
+	opacity: 0.4;
+}
+
+.full-block .bio-rea:active, .full-block .bio-rea.active {
+	opacity: 1;
+}
+
+.full-block .bio-rea * {
+	color: var(--cyan);
+}
+
+.about-me b {
+	font-weight: 900;
+}
+
+/*
 article {
 	width: 70%;
 	max-width: 1000px;
@@ -83,9 +159,9 @@ article .content .paragraph::before {
 article .content .more {
 	padding-top: 20px;
 	text-align: center;
-}
+}*/
 
-article .content .birthday {
+.about-me .content .birthday {
 	color: transparent;
 	background: linear-gradient(to right, #ffae00, #ffe600, #ffae00, #ffe600);
 	background-size: 300%;
