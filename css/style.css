@@ -26,46 +26,46 @@ body {
 	height: 100px;
 }
 
-.full-block {
+.block {
 	width: 100%;
 	padding: 50px 20%;
 	box-sizing: border-box;
 	position: relative;
 }
 
-.full-block .title {
+.block .title {
 	text-align: center;
 	font-weight: 400;
 	font-size: 35px;
 	padding: 30px 0;
 }
 
-.full-block .content {
+.block .content {
 	padding-bottom: 40px;
 	font-size: 22px;
 	text-align: justify;
 }
 
-.full-block .content .paragraph {
+.block .content .paragraph {
 	margin-bottom: 20px;
 }
 
-.full-block .content .paragraph::before {
+.block .content .paragraph::before {
 	content: "";
 	display: inline-block;
 	width: 30px;
 }
 
-.full-block .content .paragraph .b {
+.block .content .paragraph .b {
 	font-weight: 400;
 }
 
 
-.full-block .content .more {
+.block .content .more {
 	text-align: center;
 }
 
-.full-block .bio-rea {
+.block .bio-read {
 	color: var(--cyan);
 	position: absolute;
 	top: 85px;
@@ -84,15 +84,16 @@ body {
 	-o-user-select: none;
 	display: none;
 }
-.full-block .bio-rea:hover {
+
+.block .bio-read:hover {
 	opacity: 0.4;
 }
 
-.full-block .bio-rea:active, .full-block .bio-rea.active {
+.block .bio-read:active, .block .bio-read.active {
 	opacity: 1;
 }
 
-.full-block .bio-rea * {
+.block .bio-read * {
 	color: var(--cyan);
 }
 

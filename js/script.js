@@ -30,19 +30,19 @@ if (bd) {
 	});
 }
 
-const biorea = document.querySelector(".bio-rea");
-biorea.style.display = "block";
-biorea.addEventListener("click", toggle_biorea);
+const bioread = document.querySelector(".bio-read");
+bioread.style.display = "block";
+bioread.addEventListener("click", toggle_bioread);
 
-function toggle_biorea() {
-	biorea.classList.toggle("active");
-	var active = biorea.classList.contains("active");
+function toggle_bioread() {
+	bioread.classList.toggle("active");
+	var active = bioread.classList.contains("active");
 	
-	window.localStorage.setItem("biorea", active);
+	window.localStorage.setItem("bioread", active);
 
 	var bold = document.querySelectorAll(".about-me .content .paragraph .b");
 	
 	for (var b of bold) b.style.fontWeight = active ? "900" : null;
 }
 
-if (window.localStorage.getItem("biorea") == "true") toggle_biorea();
+if (window.localStorage.getItem("bioread") == "true") toggle_bioread();

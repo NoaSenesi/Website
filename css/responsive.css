@@ -7,11 +7,11 @@
         left: 10%;
     }
     
-    .full-block {
+    .block {
         padding: 50px 15%;
     }
 
-    .full-block .bio-rea {
+    .block .bio-read {
         right: 15%;
     }
 }
@@ -25,11 +25,11 @@
         width: 160px;
     }
     
-    .full-block {
+    .block {
         padding: 50px 10%;
     }
 
-    .full-block .bio-rea {
+    .block .bio-read {
         right: 10%;
     }
 }
@@ -47,11 +47,11 @@
         display: none;
     }
     
-    .full-block {
+    .block {
         padding: 50px 50px;
     }
 
-    .full-block .bio-rea {
+    .block .bio-read {
         right: 50px;
     }
 }

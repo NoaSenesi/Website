@@ -25,9 +25,9 @@ $bd = $d2->format("d/m") == $d1->format("d/m");
 			</div>
 			<div class="brand"></div>
 		</header>
-		<div class="about-me full-block">
+		<div class="about-me block">
 			<div class="title">About me</div>
-			<div class="bio-rea"><b>Bio</b>nic <b>Rea</b>ding</div>
+			<div class="bio-read"><b>Bio</b>nic <b>Rea</b>ding</div>
 			<div class="content">
 				<?php include "about-me.php"; ?>
 				<div class="more">
