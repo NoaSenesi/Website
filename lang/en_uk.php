@@ -17,20 +17,6 @@ $_LANG = array(
 	"background" => "Background",
 	"background_elements" => array(
 		array(
-			"title" => "High-school Jean Perrin - Rezé, France",
-			"description" => array(
-				"Baccalauréat STI2D SIN - Highest honours",
-				"September 2017 - June 2020"
-			)
-		),
-		array(
-			"title" => "High-school Aristide Briand - Saint-Nazaire, France",
-			"description" => array(
-				"Classe Préparatoire aux Grandes Écoles TSI",
-				"September 2020 - June 2022"
-			)
-		),
-		array(
 			"title" => "Télécom Nancy - Nancy, France",
 			"description" => array(
 				"September 2022 - Today"
@@ -41,7 +27,21 @@ $_LANG = array(
 				<img src=\"img/badges/mcl/3.png\" draggable=\"false\">
 				<img src=\"img/badges/mcl/4.png\" draggable=\"false\">
 			</div>"
-		)
+		),
+		array(
+			"title" => "High-school Aristide Briand - Saint-Nazaire, France",
+			"description" => array(
+				"Classe Préparatoire aux Grandes Écoles TSI",
+				"September 2020 - June 2022"
+			)
+		),
+		array(
+			"title" => "High-school Jean Perrin - Rezé, France",
+			"description" => array(
+				"Baccalauréat STI2D SIN - Highest honours",
+				"September 2017 - June 2020"
+			)
+		)	
 	),
 
 	"skills" => "Skills",
@@ -51,18 +51,19 @@ $_LANG = array(
 			"elements" => array(
 				array("name" => "French", "value" => "100"),
 				array("name" => "English", "value" => "95"),
-				array("name" => "German", "value" => "20")
+				array("name" => "German", "value" => "30")
 			)
 		),
 		array(
 			"subtitle" => "Programming",
 			"elements" => array(
-				array("name" => "HTML / CSS", "value" => "80"),
-				array("name" => "JS", "value" => "80"),
+				array("name" => "HTML / CSS", "value" => "85"),
 				array("name" => "PHP / MySQL", "value" => "80"),
-				array("name" => "Java", "value" => "50"),
+				array("name" => "JS / TS", "value" => "80"),
+				array("name" => "Next.JS", "value" => "60"),
+				array("name" => "Java", "value" => "70"),
 				array("name" => "Python", "value" => "75"),
-				array("name" => "MATLAB", "value" => "30"),
+				array("name" => "MATLAB", "value" => "50"),
 				array("name" => "Git", "value" => "70")
 			)
 		),
